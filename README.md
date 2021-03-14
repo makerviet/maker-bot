@@ -5,8 +5,8 @@ Makerbot is an open-source hardware platform focus on robotics and self-driving 
 
 [![Makerbot  Images1](pics/img1.jpg)](pics/img1.jpg)
 [![Makerbot  Images1](pics/img2.jpg)](pics/img2.jpg)
-* `hardware` PCB and 3D design files.
-## Specs:
+## `Hardware` PCB and 3D design files.
+### Specs:
 - ESP32-WROVER-IE(16MB)
 - MPU-9250,9 DOF IMU
 - SN65HVD230 CAN transceiver 
@@ -14,18 +14,17 @@ Makerbot is an open-source hardware platform focus on robotics and self-driving 
 - PCA9685 16 channel PWM driver
 - DRV8841 H-Bridge
 - DS3231MZ+ RTC
-## Known issues
+### Known issues
 - WiFI signal strength issue 
 - Pull up resistor on IO2 causing ESP32 cannot reset properly , Do not populate R15
 - Rs485 issue
 - cannot read magnetometer MPU9250
 - Motorshield power issue
-## Todos:
+### Todos:
 - Redesign motorshield 
 - Add pins name to Silkscreen
 - Fix known issues in next revision
 
-* `software` Firmware example.
-* `docs` Documents.
-* `pics` Pictures
+## `software` Firmware example.
+## `docs` Documents.
 Website: https://makerviet.org/
