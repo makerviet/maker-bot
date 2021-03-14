@@ -1,11 +1,11 @@
 # Makerbot 
 **Note this design should not be used as refrence since it's still under active development and testing process**
-Makerbot is an open-source hardware platform focus on robotics and self-driving vehicle featuring WiFI, BLE, 9 DOF IMU, CAN, RS485, upto 6 Servo and 4 DC motor drive
+Makerbot is an open-source hardware platform focus on robotics and self-driving vehicle featuring WiFI, BLE, 9 DOF IMU, CAN, RS485, upto 6 Servos and 4 DC motors drive
 
 
 [![Makerbot  Images1](pics/img1.jpg)](pics/img1.jpg)
 [![Makerbot  Images1](pics/img2.jpg)](pics/img2.jpg)
-## `Hardware` PCB and 3D design files.
+## Hardware: PCB and 3D design files.
 ### Specs:
 - ESP32-WROVER-IE(16MB)
 - MPU-9250,9 DOF IMU
@@ -25,6 +25,6 @@ Makerbot is an open-source hardware platform focus on robotics and self-driving 
 - Add pins name to Silkscreen
 - Fix known issues in next revision
 
-## `software` Firmware example.
-## `docs` Documents.
+## Software: Firmware example.
+## Docs: Documents.
 Website: https://makerviet.org/
