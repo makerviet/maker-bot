@@ -4,7 +4,9 @@ Makerbot is an open-source hardware platform focus on robotics and self-driving 
 
 
 [![Makerbot  Images1](pics/img1.jpg)](pics/img1.jpg)
-[![Makerbot  Images1](pics/img2.jpg)](pics/img2.jpg)
+[![Makerbot  Images2](pics/img2.jpg)](pics/img2.jpg)
+[![Motorshield  Images3](pics/motorshield_v2.jpg)](pics/motorshield_v2.jpg)
+
 ## Hardware: PCB and 3D design files.
 ### Specs:
 - ESP32-WROVER-IE(16MB)
