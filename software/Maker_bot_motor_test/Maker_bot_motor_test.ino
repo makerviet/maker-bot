@@ -3,9 +3,10 @@
 #include <Wire.h>
 #include <Adafruit_PWMServoDriver.h>
 
-#define Servo_1 5
+//#if 
+#define Servo_1 7
 #define Servo_2 6
-#define Servo_3 7 
+#define Servo_3 5 
 #define Servo_4 4
 #define Servo_5 3
 #define Servo_6 2
@@ -18,9 +19,10 @@ IPAddress apIP(192, 168, 4, 1);
 DNSServer dnsServer;
 #include <WiFi.h>
 
-const char *ssid = "ESPUI";
-const char *password = "espui";
-const char *hostname = "espui";
+const char *ssid = "Makerbot BANHMI";
+const char *password = "";
+
+const char *hostname = "Makerbot";
 
 //uint16_t status;
 
@@ -128,6 +130,8 @@ void Servo_slider(Control *sender, int type)
 }
 void setup(void)
 {
+  pinMode(13,OUTPUT);
+  digitalWrite(13,1);
   ESPUI.setVerbosity(Verbosity::VerboseJSON);
   Serial.begin(115200);
   pwm.begin();
