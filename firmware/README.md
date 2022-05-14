@@ -8,7 +8,7 @@ Trên đây là những ví dụ đề kiểm tra, thử nhiệm các tính năn
 ### Sử dụng Arduino IDE
 Các bạn có thể download và cài đặt Arduino IDE [tại đây](https://www.arduino.cc/en/software)
 
-Cài đặt ESP32 trên Arduino, hướng dẫn [tại đây](docs/Tutorial\Docs/Cài-đặt-thư-viện-ESP32-trên-Arduino-IDE.pdf) 
+Cài đặt ESP32 trên Arduino, hướng dẫn [tại đây](../docs/Tutorial_Docs/Cài-đặt-thư-viện-ESP32-trên-Arduino-IDE.pdf) 
 
 ### Sử dụng Platform IO
 Để sử dụng Platform IO các bạn cần 1 code editor, BTC recommend sử dụng VScode, có thể tải [tại đây](https://code.visualstudio.com/download) 
@@ -20,7 +20,7 @@ Cài đặt ESP32 trên Arduino, hướng dẫn [tại đây](docs/Tutorial\Docs
 
 Giải nén file nén trên tới Thư mục: **Document > Arduino > libraries** 
 
-![](images/library_window.PNG) 
+![](../images/library_window.PNG) 
 
 Ngoài ra các bạn có thể cài theo cách thủ công từng thư viện, dưới đây là chi tiết các thư viện cần thiết để chạy các chương trình ví dụ trên.
 
