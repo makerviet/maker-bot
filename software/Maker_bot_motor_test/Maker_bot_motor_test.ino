@@ -52,7 +52,7 @@ void DC_slider(Control *sender, int type)
   Serial.print(sender->id);
   Serial.print(", Value: ");
 
-  uint16_t val;
+  int16_t val;
   if (sender->value)
     val = (sender->value).toInt() * 40 + 96;
   else
@@ -222,7 +222,7 @@ void setup(void)
    ESPUI.addControl(Min, "", "400", None, slider_8);
   ESPUI.addControl(Max, "", "2200", None, slider_8);
     
-  uint16_t  slider_9 = ESPUI.addControl(ControlType::Slider, "Servo 6", "0", ControlColor::Wetasphalt, tab2, &Servo_slider);
+  uint16_t  slider_9 = ESPUI.addControl(ControlType::Slider, "Servo 5", "0", ControlColor::Wetasphalt, tab2, &Servo_slider);
    ESPUI.addControl(Min, "", "400", None, slider_9);
   ESPUI.addControl(Max, "", "2200", None, slider_9);  
   uint16_t  slider_10 = ESPUI.addControl(ControlType::Slider, "Servo 6", "0", ControlColor::Emerald, tab2, &Servo_slider);
@@ -236,7 +236,7 @@ void setup(void)
   */
 
   // Enable this option if you want sliders to be continuous (update during move) and not discrete (update on stop)
-//   ESPUI.sliderContinuous = true;
+   ESPUI.sliderContinuous = true;
 
   /*
      Optionally you can use HTTP BasicAuth. Keep in mind that this is NOT a
@@ -245,7 +245,6 @@ void setup(void)
      since it is transmitted in cleartext. Just add a string as username and
      password, for example begin("ESPUI Control", "username", "password")
   */
-//  motorSlider a(18, 19, "acnv");
   ESPUI.begin("ESPUI Control");
 }
 
