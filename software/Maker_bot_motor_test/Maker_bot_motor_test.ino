@@ -173,9 +173,7 @@ void setup(void)
 
       for (uint8_t i = 0; i<5;i++)
       {
-        digitalWrite(13,1);
         delay(500);
-        digitalWrite(13,0);
         Serial.print(".");
       } 
         digitalWrite(13,1);

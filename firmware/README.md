@@ -47,5 +47,29 @@ Sau khi kết nối với Wifi ta sử dụng trình duyệt web, ta truy cập 
 **_Lưu ý:_** _đối với mạch Makerbot BANHMI bản 12V (Mạch VRC 2022) động cơ cần phải được cắm với nguồn điện 12V từ Pin Lipo hoặc adapter để có thể điều khiển được động cơ với ví dụ này_
 
 
+![](../images/DC1.jpg) 
 
-Trên giao diện chính thấy có 2 tab
+Trên giao diện chính thấy có 2 tab **DC motor** và **Servo** 
+#### **Tab DC motor**
+Trong tab này có 4 thanh kéo như hình trên,tương ứng với 4 động cơ với số thứ tự từ 1-4
+![](../images/makerboot2.png)
+
+Điểm chính giữa thanh kéo là điểm số 0, tức động cơ không quay. Thanh kéo có giá trị chạy từ **-100 tới 100** tương ứng % tốc độ quay của động cơ DC.
+
+ Khi kéo thanh kéo về phía tay phải, động cơ quay theo chiều dương, đèn màu đỏ ở cổng động cơ sáng, giá trị thanh kéo càng lớn, đền càng sáng, động cơ càng quay nhanh.
+
+Tương tự khi kéo thanh kéo về phía tay trái động cơ quay theo chiều ngược lại, đèn màu xamh ở cổng động cơ sáng, giá trị thanh kéo càng nhỏ, đền càng sáng, động cơ càng quay nhanh.
+#### **Tab Servo**
+![](../images/servo.jpg)
+
+Ở tab Servo ta nhận thấy có 6 thanh kéo, tương ứng với 6 cổng Servo, với giá trị từ **400-2200 ns** tương ứng với thời gian bật hay dutycycle của xung PWM 
+
+Các khi kéo các thanh kéo này góc quay của servo sẽ thay đổi tùy thuộc vào loại servo đang được sử dụng, tương ứng với hình dưới. 
+![](../images/pwm.png)
+
+**_Lưu ý_**: _thông số của các động cơ servo có thể khác nhau 1 chút mặc dù cùng là 1 loại servo, vậy nên khi làm Robot các bạn cần lưu ý cân chỉnh các động cơ sao cho có thể hoạt động được chính xác nhất với yêu cầu mong muốn._
+
+**Tổng kết** : với ví dụ này các bạn có thể kiểm tra được các chức năng điều khiển động cơ của mạch **Makerbot BANHMI** có hoạt động chính. Ngoài ra ta cũng có thể sử dụng hương trình mẫu này để kiểm tra các loại động cơ đi kèm trong bộ kit K12 Maker !
+
+## Sử dụng ví dụ MakerbotwPS2
+_Sẽ cập nhật sau_
