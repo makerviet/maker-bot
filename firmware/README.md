@@ -11,7 +11,9 @@ Các bạn có thể download và cài đặt Arduino IDE [tại đây](https://
 Cài đặt ESP32 trên Arduino, hướng dẫn [tại đây](../docs/Tutorial_Docs/Cài-đặt-thư-viện-ESP32-trên-Arduino-IDE.pdf) 
 
 ### Sử dụng Platform IO
-Để sử dụng Platform IO các bạn cần 1 code editor, BTC recommend sử dụng VScode, có thể tải [tại đây](https://code.visualstudio.com/download) 
+Để sử dụng Platform IO các bạn cần 1 code editor, BTC recommend sử dụng VScode, có thể tải [tại đây](https://github.com/anhtu0310/Makerbot_motor_test).
+
+Ngoài ra các bạn có thể tìm thấy ví dụ này trên PlatformIO với đầy đủ thư viện  [tại đây](https://code.visualstudio.com/download). 
 
 ## Thư viện cần thiết
 
@@ -60,7 +62,7 @@ Trong tab này có 4 thanh kéo như hình trên,tương ứng với 4 động c
 
 Tương tự khi kéo thanh kéo về phía tay trái động cơ quay theo chiều ngược lại, đèn màu xamh ở cổng động cơ sáng, giá trị thanh kéo càng nhỏ, đền càng sáng, động cơ càng quay nhanh.
 #### **Tab Servo**
-![](../images/servo.jpg)
+![](../images/Servo.jpg)
 
 Ở tab Servo ta nhận thấy có 6 thanh kéo, tương ứng với 6 cổng Servo, với giá trị từ **400-2200 ns** tương ứng với thời gian bật hay dutycycle của xung PWM 
 
