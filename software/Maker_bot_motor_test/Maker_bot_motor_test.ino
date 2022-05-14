@@ -22,7 +22,7 @@ DNSServer dnsServer;
 const char *ssid = "Makerbot BANHMI";
 const char *password = "";
 
-const char *hostname = "Makerbot";
+const char *hostname = "Makerbot.io";
 
 //uint16_t status;
 
@@ -46,6 +46,7 @@ void setPWM(int chan1, int chan2, bool state, uint16_t val)
   }
 }
 
+
 void DC_slider(Control *sender, int type)
 {
   Serial.print("Slider: ID: ");
@@ -57,31 +58,35 @@ void DC_slider(Control *sender, int type)
     val = (sender->value).toInt() * 40 + 96;
   else
     val = 0;
+
+  bool dir = 0x8000 & val;
+  val = abs(val);
   switch(sender->id){
   case 2:
   {
-    setPWM(8, 9, 0x8000 & val, 4096 - val);
+    setPWM(8, 9,dir , 4096 - val);
     break;
   }
   case 5:
   {
-    setPWM(10, 11, 0x8000 & val, 4096 - val);
+    setPWM(10, 11,dir, 4096 - val);
     break;
   }
   case 8 :
   {
-       setPWM(12, 13, 0x8000 & val, 4096 - val);
+       setPWM(12, 13, dir, 4096 - val);
     break;
   }
   case 11:
   {
-      setPWM(14, 15, 0x8000 & val, 4096 - val);
+      setPWM(14, 15, dir, 4096 - val);
     break;
   }
   }
   Serial.println(val);
 
 }
+
 
 void Servo_slider(Control *sender, int type)
 {
