@@ -24,4 +24,11 @@ Giải nén file nén trên tới Thư mục: **Document > Arduino > libraries**
 
 Ngoài ra các bạn có thể cài theo cách thủ công từng thư viện, dưới đây là chi tiết các thư viện cần thiết để chạy các chương trình ví dụ trên.
 
-- Thư viện Adafruit PCA9685: thư viện PWM cho PCA9685, [link](https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library)
+- **Thư viện Adafruit PCA9685**: Thư viện PWM cho PCA9685, [link](https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library)
+- **Thư viện tay PS2** : Sử dụng tay cầm PS2 với Makerbot [link](https://github.com/makerhanoi/Arduino-PS2X-ESP32-Makerbot)
+- **Thư viện ESPUI** : sử dụng tạo giao diện webserver [link](https://github.com/s00500/ESPUI)
+- **Thư viện AsyncTCP cho ESP32** : Thư viện đi kèm ESPUI [link](https://github.com/me-no-dev/AsyncTCP)
+- **Thư viện Async Webserver cho ESP32** : Thư viện đi kèm ESPUI [link](https://github.com/me-no-dev/ESPAsyncWebServer)
+- **Thư viện LITTLEFS cho ESP32** : Thư viện đi kèm ESPUI [link](https://github.com/lorol/LITTLEFS)
+- **Thư viện ArduinoJson** : Thư viện đi kèm ESPUI [link](https://github.com/bblanchon/ArduinoJson)
+
