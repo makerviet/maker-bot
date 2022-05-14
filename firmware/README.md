@@ -67,7 +67,7 @@ Tương tự khi kéo thanh kéo về phía tay trái động cơ quay theo chi�
 Ở tab Servo ta nhận thấy có 6 thanh kéo, tương ứng với 6 cổng Servo, với giá trị từ **400-2200 ns** tương ứng với thời gian bật hay dutycycle của xung PWM 
 
 Các khi kéo các thanh kéo này góc quay của servo sẽ thay đổi tùy thuộc vào loại servo đang được sử dụng, tương ứng với hình dưới. 
-![](../images/pwm.png)
+![](../images/pwm.PNG)
 
 **_Lưu ý_**: _thông số của các động cơ servo có thể khác nhau 1 chút mặc dù cùng là 1 loại servo, vậy nên khi làm Robot các bạn cần lưu ý cân chỉnh các động cơ sao cho có thể hoạt động được chính xác nhất với yêu cầu mong muốn._
 
