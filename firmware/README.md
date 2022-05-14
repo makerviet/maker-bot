@@ -32,3 +32,20 @@ Ngoài ra các bạn có thể cài theo cách thủ công từng thư viện, d
 - **Thư viện LITTLEFS cho ESP32** : Thư viện đi kèm ESPUI [link](https://github.com/lorol/LITTLEFS)
 - **Thư viện ArduinoJson** : Thư viện đi kèm ESPUI [link](https://github.com/bblanchon/ArduinoJson)
 
+## Sử dụng ví dụ Maker_bot_motor_test
+Sau khi nạp ví dụ này chương trình mạch Makerbot sẽ phát ra một WIFI Access point tên là **"Makerbot BANHMI 01"**
+
+Hai chữ số cuối của tên Access point có thể được thay đổi để tránh nhầm lẫn mạch giữa các đội tham gia
+
+![](../images/wifi_scan.jpg) 
+<!-- <img src="../images/wifi_scan.jpg" alt="drawing" width="200"/> -->
+
+Kết nối với WiFi AP này không yêu cầu mật khẩu. 
+
+Sau khi kết nối với Wifi ta sử dụng trình duyệt web, ta truy cập vào địa chỉ **192.168.1.1** hoặc **makerbot.io** để vào giao diện điều khiển động cơ.
+
+**_Lưu ý:_** _đối với mạch Makerbot BANHMI bản 12V (Mạch VRC 2022) động cơ cần phải được cắm với nguồn điện 12V từ Pin Lipo hoặc adapter để có thể điều khiển được động cơ với ví dụ này_
+
+
+
+Trên giao diện chính thấy có 2 tab
