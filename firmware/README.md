@@ -20,7 +20,7 @@ Cài đặt ESP32 trên Arduino, hướng dẫn [tại đây](docs/Tutorial\Docs
 
 Giải nén file nén trên tới Thư mục: **Document > Arduino > libraries** 
 
-![](images/library_window.png) 
+![](images/library_window.PNG) 
 
 Ngoài ra các bạn có thể cài theo cách thủ công từng thư viện, dưới đây là chi tiết các thư viện cần thiết để chạy các chương trình ví dụ trên.
 
