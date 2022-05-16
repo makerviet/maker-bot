@@ -33,12 +33,13 @@ Vậy nên dưới đây là lưu ý chi tiết về những việc thí sinh v�
 
 **- Nguyên nhân :** _cắm chân sạc pin vào chaan header I2C của mạch makerbot_ 
 
-Header màu tráng (2 header, 1 trên mạch điều khiển, 1 trên mạch công suât) được thiết kế để cắm cảm biến, và các thiết bị điều khiển qua giao thức I2C.
+><div style="text-align: justify"> Header màu tráng (2 header, 1 trên mạch điều khiển, 1 trên mạch công suât) được thiết kế để cắm cảm biến, và các thiết bị điều khiển qua giao thức I2C.
     
 
-Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngược không chỉ vào các linh kiện sử dụng giao thức I2C mà còn ở các bị chạy trên lưới 3.3V
+>Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngược không chỉ vào các linh kiện sử dụng giao thức I2C mà còn ở các bị chạy trên lưới 3.3V
 
 => Hỏng gần như toàn các thiết bị active, IC trên cả 2 mạch công suất và mạch điều khiển
+</div>
 
  **- Cách nhận biết:** 
 
