@@ -29,7 +29,7 @@ Vậy nên dưới đây là lưu ý chi tiết về những việc thí sinh v�
 
 **- Thời gian sửa chữa:** **2-4 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
 
-**- Nguyên nhân :** **_cắm chân sạc pin vào chaan header I2C của mạch makerbot_** 
+**- Nguyên nhân :** _cắm chân sạc pin vào chaan header I2C của mạch makerbot_ 
 
 Header màu tráng (2 header, 1 trên mạch điều khiển, 1 trên mạch công suât) được thiết kế để cắm cảm biến, và các thiết bị điều khiển qua giao thức I2C.
     
@@ -39,6 +39,7 @@ Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngư
 => Hỏng gần như toàn các thiết bị active, IC trên cả 2 mạch công suất và mạch điều khiển
 
  **- Cách nhận biết:** 
+
     - Mạch không hoạt động, cắm máy tính không nhận
     - Mạch điều khiển không sáng đèn 
     - Đường 3.3V bị chập xuống GND
