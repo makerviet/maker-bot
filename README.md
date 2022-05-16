@@ -63,7 +63,11 @@ Việc cắm pin vào chân đièu khiển động cơ, khiến dòng 12V từ p
 ### **- Phương pháp sửa chữa**: thay thế những linh kiện sau: 
     Trên mạch công suât: 
     - IC cầu H TA6586
+    
+```diff
 
+@@ text in purple (and bold)@@
+```
 <!-- **Note this design should not be used as refrence since it's still under active development and testing process**
 Makerbot is an open-source hardware platform focus on robotics and self-driving vehicle featuring WiFI, BLE, 9 DOF IMU, CAN, RS485, upto 6 Servos and 4 DC motors drive
 
