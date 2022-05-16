@@ -24,9 +24,12 @@ Mặc dù Ban bảo trợ chuyên môn đã lưu ý rõ về những điều kh�
 Vậy nên dưới đây là lưu ý chi tiết về những việc thí sinh và mentor **TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM** khi sử dụng mạch **Makerbot BANHMI**.
 
 ## Cắm cổng sạc pin 4 chân vào header I2C
-### **- Mức độ nghiêm trọng:** <span style="color:red">**Cực kì nghiêm trọng** </span>
-### **- Thời gian sửa chữa:** **2-4 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
-### **- Nguyên nhân :** **_cắm chân sạc pin vào chaan header I2C của mạch makerbot_** 
+
+**- Mức độ nghiêm trọng:** <span style="color:red">**Cực kì nghiêm trọng** </span>
+
+**- Thời gian sửa chữa:** **2-4 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
+
+**- Nguyên nhân :** **_cắm chân sạc pin vào chaan header I2C của mạch makerbot_** 
 
 Header màu tráng (2 header, 1 trên mạch điều khiển, 1 trên mạch công suât) được thiết kế để cắm cảm biến, và các thiết bị điều khiển qua giao thức I2C.
     
@@ -35,12 +38,13 @@ Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngư
 
 => Hỏng gần như toàn các thiết bị active, IC trên cả 2 mạch công suất và mạch điều khiển
 
-### **- Cách nhận biết:** 
+ **- Cách nhận biết:** 
     - Mạch không hoạt động, cắm máy tính không nhận
     - Mạch điều khiển không sáng đèn 
     - Đường 3.3V bị chập xuống GND
 
-### **- Phương pháp sửa chữa:** thay thế những linh kiện sau:
+ **- Phương pháp sửa chữa:** thay thế những linh kiện sau:
+
     Trên mạch điều khiển: 
     - ESP32-WROVER-E 16Mb
     - CP2102
@@ -52,12 +56,7 @@ Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngư
     - PCA9685
 
 ## Cắm pin vào cổng động cơ
- **- Mức độ nghiêm trọng:** 
- 
- ```diff
-- Nghiêm trọng
-```
- <!-- <span style="color:red">**Nghiêm trọng** </span> -->
+ **- Mức độ nghiêm trọng:**  <span style="color:red">**Nghiêm trọng** </span>
 
  **- Thời gian sửa chữa:** **1-2 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
 
