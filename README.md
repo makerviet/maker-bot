@@ -52,9 +52,15 @@ Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngư
     - PCA9685
 
 ## Cắm pin vào cổng động cơ
-### **- Mức độ nghiêm trọng:** <span style="color:red">**Nghiêm trọng** </span>
- **- Thời gian sửa chữa:** **1-2 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
+ **- Mức độ nghiêm trọng:** 
  
+ ```diff
+- Nghiêm trọng
+```
+ <!-- <span style="color:red">**Nghiêm trọng** </span> -->
+
+ **- Thời gian sửa chữa:** **1-2 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
+
  **- Nguyên nhân :** _Cắm pin vào cổng động cơ làm cháy IC cầu H_
 
 Việc cắm pin vào chân đièu khiển động cơ, khiến dòng 12V từ pin chạy ngược vào cầu H, đánh thủng Fet bên trong cầu H, dẫn tới cháy IC cầu H
@@ -69,10 +75,7 @@ Việc cắm pin vào chân đièu khiển động cơ, khiến dòng 12V từ p
     Trên mạch công suât: 
     - IC cầu H TA6586
 
-```diff
 
-@@ text in purple (and bold)@@
-```
 <!-- **Note this design should not be used as refrence since it's still under active development and testing process**
 Makerbot is an open-source hardware platform focus on robotics and self-driving vehicle featuring WiFI, BLE, 9 DOF IMU, CAN, RS485, upto 6 Servos and 4 DC motors drive
 
