@@ -20,7 +20,9 @@ Website: https://makerviet.org/
 Qua 24h gửi mạch cho các đội (17h 16/5/2022), ban bảo trợ chuyên môn MakerViet đã nhận được thông tin 8/50 mạch đã bị hư hỏng do sai sót trong quá trình sử dụng của không chỉ các bạn thí sinh mà còn của các Mentor trực tiếp hướng dẫn các đội
 
 Mặc dù Ban bảo trợ chuyên môn đã lưu ý rõ về những điều không được làm trong quá trình sử dụng mạch makerBot BANHMI, không dưới 3 lần trong quá trình đào tạo, những lưu ý này cũng được in rõ ở trang nhất của tài liệu, nhưng sự cố vẫn xảy ra tương đối nhiều khi các bạn sử dụng
+
 ![](/images/u_should_have_read.png)
+
 Vậy nên dưới đây là lưu ý chi tiết về những việc thí sinh và mentor **TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM** khi sử dụng mạch **Makerbot BANHMI**.
 
 ## Cắm cổng sạc pin 4 chân vào header I2C
@@ -65,11 +67,11 @@ Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngư
 
 Việc cắm pin vào chân đièu khiển động cơ, khiến dòng 12V từ pin chạy ngược vào cầu H, đánh thủng Fet bên trong cầu H, dẫn tới cháy IC cầu H
 
-### **- Cách nhận biết:** _IC cầu H bị cháy, nổ, kênh động cơ đó không hoạt động_
+ **- Cách nhận biết:** _IC cầu H bị cháy, nổ, kênh động cơ đó không hoạt động_
 ![](/images/repair1.jpg)
  **- Phương pháp sửa chữa**: 
  
- thay thế những linh kiện sau: 
+&nbsp;&nbsp;Thay thế những linh kiện sau: 
 
 
     Trên mạch công suât: 
