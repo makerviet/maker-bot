@@ -17,7 +17,7 @@ _sẽ cập nhật sau_
 ## Docs: Documents.
 Website: https://makerviet.org/
 # Lưu ý đặc biệt dành cho thí sinh và Mentor của  cuộc thi VRC 2022
-Qua 24h gửi mạch cho các đội (17h 16/5/2022), ban bảo trợ chuyên môn MakerViet đã nhận được thông tin 8/50 mạch đã bị hư hỏng do sai sót trong quá trình sử dụng của không chỉ các bạn thí sinh mà còn của các Mentor trực tiếp hướng dẫn các đội
+Qua 24h gửi mạch cho các đội (17h 16/5/2022), ban bảo trợ chuyên môn MakerViet đã nhận được thông tin **11/50** mạch đã bị hư hỏng do sai sót trong quá trình sử dụng của không chỉ các bạn thí sinh mà còn của các Mentor trực tiếp hướng dẫn các đội
 
 Mặc dù Ban bảo trợ chuyên môn đã lưu ý rõ về những điều không được làm trong quá trình sử dụng mạch makerBot BANHMI, không dưới 3 lần trong quá trình đào tạo, những lưu ý này cũng được in rõ ở trang nhất của tài liệu, nhưng sự cố vẫn xảy ra tương đối nhiều khi các bạn sử dụng
 
