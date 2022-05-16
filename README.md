@@ -53,17 +53,22 @@ Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngư
 
 ## Cắm pin vào cổng động cơ
 ### **- Mức độ nghiêm trọng:** <span style="color:red">**Nghiêm trọng** </span>
-### **- Thời gian sửa chữa:** **1-2 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
-### **- Nguyên nhân :** _Cắm pin vào cổng động cơ làm cháy IC cầu H_
+ **- Thời gian sửa chữa:** **1-2 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
+ 
+ **- Nguyên nhân :** _Cắm pin vào cổng động cơ làm cháy IC cầu H_
 
 Việc cắm pin vào chân đièu khiển động cơ, khiến dòng 12V từ pin chạy ngược vào cầu H, đánh thủng Fet bên trong cầu H, dẫn tới cháy IC cầu H
 
 ### **- Cách nhận biết:** _IC cầu H bị cháy, nổ, kênh động cơ đó không hoạt động_
 ![](/images/repair1.jpg)
-### **- Phương pháp sửa chữa**: thay thế những linh kiện sau: 
+ **- Phương pháp sửa chữa**: 
+ 
+ thay thế những linh kiện sau: 
+
+
     Trên mạch công suât: 
     - IC cầu H TA6586
-    
+
 ```diff
 
 @@ text in purple (and bold)@@
