@@ -24,20 +24,23 @@ Mặc dù Ban bảo trợ chuyên môn đã lưu ý rõ về những điều kh�
 Vậy nên dưới đây là lưu ý chi tiết về những việc thí sinh và mentor **TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM** khi sử dụng mạch **Makerbot BANHMI**.
 
 ## Cắm cổng sạc pin 4 chân vào header I2C
-### - Mức độ nghiêm trọng: <span style="color:red">**Cực kì nghiêm trọng** </span>
-### - Thời gian sửa chữa: **2-4 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
-### - Nguyên nhân : **_cắm chân sạc pin vào chaan header I2C của mạch makerbot_** 
+### **- Mức độ nghiêm trọng:** <span style="color:red">**Cực kì nghiêm trọng** </span>
+### **- Thời gian sửa chữa:** **2-4 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
+### **- Nguyên nhân :** **_cắm chân sạc pin vào chaan header I2C của mạch makerbot_** 
 
-    Header màu tráng (2 header, 1 trên mạch điều khiển, 1 trên mạch công suât) được thiết kế để cắm cảm biến, và các thiết bị điều khiển qua giao thức I2C.
-    Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngược không chỉ vào các linh kiện sử dụng giao thức I2C mà còn ở các bị chạy trên lưới 3.3V
-    => Hỏng gần như toàn các thiết bị active, IC trên cả 2 mạch công suất và mạch điều khiển
+Header màu tráng (2 header, 1 trên mạch điều khiển, 1 trên mạch công suât) được thiết kế để cắm cảm biến, và các thiết bị điều khiển qua giao thức I2C.
+    
 
-### Cách nhận biết: 
+Khi cắm chân sạc pin vào cổng này, điện áp từ pin sẽ dội ngược không chỉ vào các linh kiện sử dụng giao thức I2C mà còn ở các bị chạy trên lưới 3.3V
+
+=> Hỏng gần như toàn các thiết bị active, IC trên cả 2 mạch công suất và mạch điều khiển
+
+### **- Cách nhận biết:** 
     - Mạch không hoạt động, cắm máy tính không nhận
     - Mạch điều khiển không sáng đèn 
     - Đường 3.3V bị chập xuống GND
 
-### - Phương pháp sửa chữa: thay thế những linh kiện sau: 
+### **- Phương pháp sửa chữa:** thay thế những linh kiện sau:
     Trên mạch điều khiển: 
     - ESP32-WROVER-E 16Mb
     - CP2102
@@ -49,14 +52,15 @@ Vậy nên dưới đây là lưu ý chi tiết về những việc thí sinh v�
     - PCA9685
 
 ## Cắm pin vào cổng động cơ
-### - Mức độ nghiêm trọng: <span style="color:red">**Nghiêm trọng** </span>
-### - Thời gian sửa chữa: **1-2 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
-### - Nguyên nhân : **_Cắm pin vào cổng động cơ làm cháy IC cầu H_** 
-    Việc cắm pin vào chân đièu khiển động cơ, khiến dòng 12V từ pin chạy ngược vào cầu H, đánh thủng Fet bên trong cầu H, dẫn tới cháy IC cầu H
+### **- Mức độ nghiêm trọng:** <span style="color:red">**Nghiêm trọng** </span>
+### **- Thời gian sửa chữa:** **1-2 tuần**  _(do tình trạng thiếu chip đang diễn ra trên toàn cầu)_ 
+### **- Nguyên nhân :** _Cắm pin vào cổng động cơ làm cháy IC cầu H_
 
-### Cách nhận biết: **_IC cầu H bị cháy, nổ, kênh động cơ đó không hoạt động_**
+Việc cắm pin vào chân đièu khiển động cơ, khiến dòng 12V từ pin chạy ngược vào cầu H, đánh thủng Fet bên trong cầu H, dẫn tới cháy IC cầu H
+
+### **- Cách nhận biết:** _IC cầu H bị cháy, nổ, kênh động cơ đó không hoạt động_
 ![](/images/repair1.jpg)
-### - Phương pháp sửa chữa: thay thế những linh kiện sau: 
+### **- Phương pháp sửa chữa**: thay thế những linh kiện sau: 
     Trên mạch công suât: 
     - IC cầu H TA6586
 
