@@ -1,8 +1,18 @@
+/*
+ * A better version of MakerBotwPS2 example used with makerbot BANHMI hardware platform
+ * This version simplify the joystick controll method, where the functionality stay the same.
+ * Added new controling menthod, switch controll mode by pressing SELECT button
+ * Added nitro like speed booster when holding L2
+ * 
+ * Writen by Tu Dang - Makerviet
+ */
+
 #include "motors.h"
 #include "PS2_controller.h"
 
 void setup()
 {
+
   Serial.begin(115200);
   initMotors();
   setupPS2controller();
@@ -11,6 +21,9 @@ void setup()
 
 void loop()
 {
-  ps2x.read_gamepad(false, 0);
+  ps2x.read_gamepad(0, 0);
   PS2control();
+
+  delay(150);
+
 }

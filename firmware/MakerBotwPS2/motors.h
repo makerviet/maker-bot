@@ -5,8 +5,6 @@
 #define MIN_PWM 0
 #define MAX_PWM 4095
 
-//#define SDA 3
-//#define SCL 0
 // PWM channels of pca9685 0-16
 #define PWM_CHANNEL1 8
 #define PWM_CHANNEL2 9
@@ -17,25 +15,40 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 void setPWMMotors(int c1, int c2, int c3, int c4)
 {
-  // setPWM(channel, on_duty_cycle, off_duty_cycle)
-  Serial.print(c1);
-  Serial.print("\t");
-  Serial.print(c2);
-  Serial.print("\t");
-  Serial.print(c3);
-  Serial.print("\t");
-  Serial.print(c4);
-  Serial.println();
+  char dbg_str[30];
+  sprintf(dbg_str,"C1: %d\tC2: %d\tC3: %d\tC4: %d",c1,c2,c3,c4);
+  Serial.println(dbg_str);
 
-  pwm.setPWM(PWM_CHANNEL1, c1, MAX_PWM - c1);
-  pwm.setPWM(PWM_CHANNEL2, c2, MAX_PWM - c2);
-  pwm.setPWM(PWM_CHANNEL3, c3, MAX_PWM - c3);
-  pwm.setPWM(PWM_CHANNEL4, c4, MAX_PWM - c4);
+  pwm.setPWM(PWM_CHANNEL1, 0, c1);
+  pwm.setPWM(PWM_CHANNEL2, 0, c2);
+  pwm.setPWM(PWM_CHANNEL3, 0, c3);
+  pwm.setPWM(PWM_CHANNEL4, 0, c4);
+}
+
+void setPWMMotors2(int c1, int c2, int c3, int c4)
+{
+  // setPWM(channel, on_duty_cycle, off_duty_cycle)
+  // Serial.print(c1);
+  // Serial.print("\t");
+  // Serial.print(c2);
+  // Serial.print("\t");
+  // Serial.print(c3);
+  // Serial.print("\t");
+  // Serial.print(c4);
+  // Serial.println();
+  char PS2_text[100];
+  sprintf(PS2_text,"pwm_left: %d, dir_left: %d  pwm_right: %d, dir_right: %d \n",c1,c2,c3,c4);
+  Serial.println(PS2_text);
+
+  pwm.setPWM(12, 0, c1);
+  pwm.setPWM(13, 0, c2);
+  pwm.setPWM(14, 0, c3);
+  pwm.setPWM(15, 0, c4);
 }
 
 void initMotors()
 {
-  Wire.begin(); //SDA, SCL,400000);
+  Wire.begin(); // SDA, SCL,400000);
   pwm.begin();
   pwm.setOscillatorFrequency(27000000);
   pwm.setPWMFreq(1600);
@@ -43,28 +56,3 @@ void initMotors()
 
   setPWMMotors(0, 0, 0, 0);
 }
-
-// /**
-//  * Set speed and direction for 2 motors
-//  *
-//  * @param left_motor_speed: speed with direction for left motor. Range from -1 to 1. 1: max speed forward, -1: max speed reverse
-//  * @param right_motor_speed: speed with direction for right motor. Range from -1 to 1. 1: max speed forward, -1: max speed reverse
-//  */
-// void setSpeed(float left_motor_speed, float right_motor_speed) {
-
-//   int c1 = 0, c2 = 0, c3 = 0, c4 = 0;
-
-//   if (left_motor_speed > 0) {
-//     c1 = max(MIN_PWM, min(int(abs(left_motor_speed) * MAX_PWM), MAX_PWM));
-//   } else {
-//     c2 = max(MIN_PWM, min(int(abs(left_motor_speed) * MAX_PWM), MAX_PWM));
-//   }
-
-//   if (right_motor_speed > 0) {
-//     c3 = max(MIN_PWM, min(int(abs(right_motor_speed) * MAX_PWM), MAX_PWM));
-//   } else {
-//     c4 = max(MIN_PWM, min(int(abs(right_motor_speed) * MAX_PWM), MAX_PWM));
-//   }
-
-//   setPWMMotors(c1, c2, c3, c4);
-// }
