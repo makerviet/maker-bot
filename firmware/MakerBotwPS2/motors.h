@@ -25,27 +25,6 @@ void setPWMMotors(int c1, int c2, int c3, int c4)
   pwm.setPWM(PWM_CHANNEL4, 0, c4);
 }
 
-void setPWMMotors2(int c1, int c2, int c3, int c4)
-{
-  // setPWM(channel, on_duty_cycle, off_duty_cycle)
-  // Serial.print(c1);
-  // Serial.print("\t");
-  // Serial.print(c2);
-  // Serial.print("\t");
-  // Serial.print(c3);
-  // Serial.print("\t");
-  // Serial.print(c4);
-  // Serial.println();
-  char PS2_text[100];
-  sprintf(PS2_text,"pwm_left: %d, dir_left: %d  pwm_right: %d, dir_right: %d \n",c1,c2,c3,c4);
-  Serial.println(PS2_text);
-
-  pwm.setPWM(12, 0, c1);
-  pwm.setPWM(13, 0, c2);
-  pwm.setPWM(14, 0, c3);
-  pwm.setPWM(15, 0, c4);
-}
-
 void initMotors()
 {
   Wire.begin(); // SDA, SCL,400000);
