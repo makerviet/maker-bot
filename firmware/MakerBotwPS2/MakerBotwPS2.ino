@@ -1,7 +1,7 @@
 /*
  * A better version of MakerBotwPS2 example used with makerbot BANHMI hardware platform
- * This version simplify the joystick controll method, where the functionality stay the same.
- * Added new controling menthod, switch controll mode by pressing SELECT button
+ * This version simplify the joystick driving method, where the functionality stay the same.
+ * Added new controling menthod, switch driving mode by pressing SELECT button
  * Added nitro like speed booster when holding L2
  * 
  * Writen by Tu Dang - Makerviet
