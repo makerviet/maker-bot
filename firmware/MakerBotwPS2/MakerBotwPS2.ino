@@ -24,6 +24,6 @@ void loop()
   ps2x.read_gamepad(0, 0);
   PS2control();
 
-  delay(150);
+  delay(50);
 
 }
