@@ -7,17 +7,19 @@ Trên đây là những ví dụ đề kiểm tra, thử nghiệm các tính nă
 ## Cài đặt trình biên dịch
 ### Sử dụng Arduino IDE
 Các bạn có thể download và cài đặt Arduino IDE [tại đây](https://www.arduino.cc/en/software)
+
 Cài đặt ESP32 trên Arduino, hướng dẫn [tại đây](../docs/Tutorial_Docs/Cài-đặt-thư-viện-ESP32-trên-Arduino-IDE.pdf) 
 
 ### Sử dụng Platform IO
-Để sử dụng Platform IO các bạn cần 1 code editor, BTC recommend sử dụng VScode, có thể tải [tại đây](https://github.com/anhtu0310/Makerbot_motor_test).
+Để sử dụng Platform IO các bạn cần 1 code editor, chúng tôi khuyến nghị sử dụng VScode, có thể tải [tại đây](https://github.com/anhtu0310/Makerbot_motor_test).
+
 Ngoài ra các bạn có thể tìm thấy ví dụ này trên PlatformIO với đầy đủ thư viện  [tại đây](https://code.visualstudio.com/download). 
 
 ## Cài đặt các thư viện cần thiết
-Để tiện lợi cho các mentor và các bạn thí sinh dưới đây là tổng hợp toàn bộ các thư viện cần thiết, [tại đây](https://rogosmart-my.sharepoint.com/:u:/g/personal/tu_danganh_rogo_com_vn/ESJKm2XPhw9Hl89-lLPU8d4B54ctBPSGGFCmoeG4xCfOxw?e=gbFQdg)  
+Để tiện lợi cho tất cả mọi người, chúng tôi đã tổng hợp toàn bộ các thư viện cần thiết để sử dụng các chương trình mẫu, bạn có thể tải về [tại đây](https://rogosmart-my.sharepoint.com/:u:/g/personal/tu_danganh_rogo_com_vn/ESJKm2XPhw9Hl89-lLPU8d4B54ctBPSGGFCmoeG4xCfOxw?e=gbFQdg)  
 
 
-Giải nén file nén trên tới Thư mục: **Document > Arduino > libraries** 
+Sau khi tải về file trên, bạn tiến hành cài đặt bằng cách giải nén file nén tới Thư mục: **Document > Arduino > libraries** 
 
 ![](../images/library_window.PNG) 
 
@@ -51,7 +53,7 @@ Sau khi kết nối với Wifi, ta sử dụng trình duyệt web truy cập và
 Trên giao diện chính có 2 tab **DC motor** và **Servo** 
 #### **Tab DC motor**
 Trong tab này có 4 thanh kéo như hình trên,tương ứng với 4 động cơ với số thứ tự từ 1-4
-![](../images/via_motorshield_ports)
+![](../images/via_motorshield_ports.png)
 
 Điểm chính giữa thanh kéo là điểm số 0, tức động cơ không quay. Thanh kéo có giá trị chạy từ **-100 tới 100** tương ứng % tốc độ quay của động cơ DC.
 
