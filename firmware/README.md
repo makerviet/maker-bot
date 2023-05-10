@@ -1,8 +1,8 @@
 # Hướng dẫn sử dụng các chương trình mẫu
 ## Giới thiệu 
 Trên đây là những ví dụ đề kiểm tra, thử nghiệm các tính năng hoạt động của mạch VIA, bao gồm:
-- Maker_bot_motor_test: ví dụ điều khiển động cơ DC và Servo
-- MakerbotwPS2: ví dụ điều khiển động cơ DC bằng tay cầm PS2
+- Maker_bot_motor_test: chương trình mẫu điều khiển động cơ DC và Servo
+- MakerbotwPS2: chương trình mẫu điều khiển động cơ DC bằng gamepad PS2
 
 ## Cài đặt trình biên dịch
 ### Sử dụng Arduino IDE
