@@ -1,6 +1,6 @@
 # Hướng dẫn sử dụng các chương trình mẫu
 ## Giới thiệu 
-Trên đây là những chương trình mẫu đề kiểm tra, thử nghiệm các tính năng hoạt động của mạch VIA, bao gồm:
+Trên đây là những chương trình mẫu để kiểm tra, thử nghiệm các tính năng hoạt động của mạch VIA, bao gồm:
 - Maker_bot_motor_test: chương trình mẫu điều khiển động cơ DC và Servo
 - MakerbotwPS2: chương trình mẫu điều khiển động cơ DC bằng gamepad PS2
 
