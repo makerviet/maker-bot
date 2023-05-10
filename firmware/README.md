@@ -69,7 +69,7 @@ Tương tự khi kéo thanh kéo về phía tay trái động cơ quay theo chi�
 Các khi kéo các thanh kéo này góc quay của servo sẽ thay đổi tùy thuộc vào loại servo đang được sử dụng, tương ứng với hình dưới. 
 ![](../images/pwm.PNG)
 
-**_Lưu ý_**: _thông số của các động cơ servo có thể khác nhau 1 chút mặc dù cùng là 1 loại servo, vậy nên khi làm Robot các bạn cần lưu ý cân chỉnh các động cơ sao cho có thể hoạt động được chính xác nhất với yêu cầu mong muốn._
+**_Lưu ý_**: _thông số của các động cơ servo có thể khác nhau một chút mặc dù cùng là một loại servo, vậy nên khi làm Robot các bạn cần lưu ý căn chỉnh các động cơ sao cho có thể hoạt động được chính xác nhất với yêu cầu mong muốn._
 
 **Tổng kết** : với ví dụ này các bạn có thể kiểm tra được các chức năng điều khiển động cơ của mạch **Makerbot BANHMI** có hoạt động chính. Ngoài ra ta cũng có thể sử dụng hương trình mẫu này để kiểm tra các loại động cơ đi kèm trong bộ kit K12 Maker !
 
