@@ -1,4 +1,4 @@
-# Hướng dẫn sử dụng các ví dụ phần mềm
+# Hướng dẫn sử dụng các chương trình mẫu
 ## Giới thiệu 
 Trên đây là những ví dụ đề kiểm tra, thử nghiệm các tính năng hoạt động của mạch VIA, bao gồm:
 - Maker_bot_motor_test: ví dụ điều khiển động cơ DC và Servo
@@ -31,33 +31,34 @@ Ngoài ra các bạn có thể cài theo cách thủ công từng thư viện, d
 - **Thư viện LITTLEFS cho ESP32** : Thư viện đi kèm ESPUI [link](https://github.com/lorol/LITTLEFS)
 - **Thư viện ArduinoJson** : Thư viện đi kèm ESPUI [link](https://github.com/bblanchon/ArduinoJson)
 
-## Sử dụng ví dụ Maker_bot_motor_test
-Sau khi nạp ví dụ này chương trình mạch Makerbot sẽ phát ra một WIFI Access point tên là **"Makerbot BANHMI 01"**
+## Sử dụng chương trình mẫu Maker_bot_motor_test
+Sau khi nạp chương trình mẫu này, mạch VIA sẽ phát ra một WIFI Access point tên là **"Makerbot BANHMI 01"**
 
-Hai chữ số cuối của tên Access point có thể được thay đổi để tránh nhầm lẫn mạch giữa các đội tham gia
+Hai chữ số cuối của tên Access point có thể được thay đổi (bằng cách tùy biến trong code) để tránh nhầm lẫn giữa mạch của các đội thi với nhau.
 
 ![](../images/wifi_scan.jpg) 
 <!-- <img src="../images/wifi_scan.jpg" alt="drawing" width="200"/> -->
 
 Kết nối với WiFi AP này không yêu cầu mật khẩu. 
 
-Sau khi kết nối với Wifi ta sử dụng trình duyệt web, ta truy cập vào địa chỉ **192.168.1.1** hoặc **makerbot.io** để vào giao diện điều khiển động cơ.
+Sau khi kết nối với Wifi, ta sử dụng trình duyệt web truy cập vào địa chỉ **192.168.1.1** hoặc **makerbot.io** để vào giao diện điều khiển động cơ.
 
-**_Lưu ý:_** _đối với mạch Makerbot BANHMI bản 12V (Mạch VRC 2022) động cơ cần phải được cắm với nguồn điện 12V từ Pin Lipo hoặc adapter để có thể điều khiển được động cơ với ví dụ này_
+**_Lưu ý:_** _mạch công suất VIA (motorshield) bản 12V (dành cho các cuộc thi như VRC) cần phải được cấp nguồn điện 12V từ Pin Lipo hoặc adapter để có thể điều khiển được động cơ_
 
 
 ![](../images/DC1.jpg) 
 
-Trên giao diện chính thấy có 2 tab **DC motor** và **Servo** 
+Trên giao diện chính có 2 tab **DC motor** và **Servo** 
 #### **Tab DC motor**
 Trong tab này có 4 thanh kéo như hình trên,tương ứng với 4 động cơ với số thứ tự từ 1-4
-![](../images/makerboot2.png)
+![](../images/via_motorshield_ports)
 
 Điểm chính giữa thanh kéo là điểm số 0, tức động cơ không quay. Thanh kéo có giá trị chạy từ **-100 tới 100** tương ứng % tốc độ quay của động cơ DC.
 
- Khi kéo thanh kéo về phía tay phải, động cơ quay theo chiều dương, đèn màu đỏ ở cổng động cơ sáng, giá trị thanh kéo càng lớn, đền càng sáng, động cơ càng quay nhanh.
+Khi kéo thanh kéo về phía tay phải, động cơ quay theo chiều một chiều, đèn màu đỏ ở cổng động cơ sáng, giá trị thanh kéo càng lớn, đền càng sáng, động cơ càng quay nhanh.
 
 Tương tự khi kéo thanh kéo về phía tay trái động cơ quay theo chiều ngược lại, đèn màu xamh ở cổng động cơ sáng, giá trị thanh kéo càng nhỏ, đền càng sáng, động cơ càng quay nhanh.
+
 #### **Tab Servo**
 ![](../images/Servo.jpg)
 
@@ -70,5 +71,5 @@ Các khi kéo các thanh kéo này góc quay của servo sẽ thay đổi tùy t
 
 **Tổng kết** : với ví dụ này các bạn có thể kiểm tra được các chức năng điều khiển động cơ của mạch **Makerbot BANHMI** có hoạt động chính. Ngoài ra ta cũng có thể sử dụng hương trình mẫu này để kiểm tra các loại động cơ đi kèm trong bộ kit K12 Maker !
 
-## Sử dụng ví dụ MakerbotwPS2
-_Sẽ cập nhật sau_
+## Sử dụng chương trình mẫu MakerbotwPS2
+Chương trình mẫu này cho phép chúng ta thực hiện việc điều khiển động cơ tại cổng động cơ 8 và 9 với gamepad PS2.
