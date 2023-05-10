@@ -75,4 +75,7 @@ Các khi kéo các thanh kéo này góc quay của servo sẽ thay đổi tùy t
 
 ## Sử dụng chương trình mẫu MakerbotwPS2
 Chương trình mẫu này cho phép chúng ta thực hiện việc điều khiển động cơ tại cổng động cơ 8 và 9 với gamepad PS2.
+
 Bạn có thể thử lắp một bộ khung xe robot đơn giản và thử nghiệm điều khiển robot bằng gamepad PS2 với chương trình mẫu này nhé!
+
+Tham khảo bài viết sau để biết cách kết nối gamepad với mạch VIA: [Sử dụng gamepad với mạch VIA](https://via.makerviet.org/vi/docs/3_robotics-with-via/4_gamepad-with-via/)
