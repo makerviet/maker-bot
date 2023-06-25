@@ -12,7 +12,6 @@
 
 void setup()
 {
-
   Serial.begin(115200);
   initMotors();
   setupPS2controller();
@@ -23,7 +22,5 @@ void loop()
 {
   ps2x.read_gamepad(0, 0);
   PS2control();
-
   delay(50);
-
 }
